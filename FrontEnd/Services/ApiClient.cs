@@ -42,6 +42,8 @@ namespace FrontEnd.Services
             response.EnsureSuccessStatusCode();
 
             return await response.Content.ReadAsJsonAsync<AttendeeResponse>();
+
+            //return await response.Content.ReadAsAsync<AttendeeResponse>();
         }
 
         public async Task<SessionResponse> GetSessionAsync(int id)
@@ -110,18 +112,18 @@ namespace FrontEnd.Services
             response.EnsureSuccessStatusCode();
         }
 
-        //public async Task<List<SearchResult>> SearchAsync(string query)
-        //{
-        //    var term = new SearchTerm
-        //    {
-        //        Query = query
-        //    };
+        public async Task<IList<SearchResult>> SearchAsync(string query)
+        {
+            var term = new SearchTerm
+            {
+                Query = query
+            };
 
-        //    var response = await _httpClient.PostJsonAsync($"/api/search", term);
+            var response = await _httpClient.PostJsonAsync($"/api/search", term);
 
-        //    response.EnsureSuccessStatusCode();
+            response.EnsureSuccessStatusCode();
 
-        //    return await response.Content.ReadAsJsonAsync<List<SearchResult>>();
-        //}
+            return await response.Content.ReadAsJsonAsync<List<SearchResult>>();
+        }
     }
 }

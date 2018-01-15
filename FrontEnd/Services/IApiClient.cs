@@ -12,7 +12,7 @@ namespace FrontEnd.Services
         Task<IList<SpeakerResponse>> GetSpeakersAsync();
         Task<SpeakerResponse> GetSpeakerAsync(int id);
         Task PutSessionAsync(Session session);
-        //Task<IList<SearchResult>> SearchAsync(string query);
+        Task<IList<SearchResult>> SearchAsync(string query);
         Task AddAttendeeAsync(Attendee attendee);
         Task<AttendeeResponse> GetAttendeeAsync(string name);
         Task DeleteSessionAsync(int id);
