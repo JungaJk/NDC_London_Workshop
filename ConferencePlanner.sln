@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd", "BackEnd\BackEnd.csproj", "{53836AD3-338F-4B8C-BDCA-01A362D57DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd", "BackEnd\BackEnd.csproj", "{53836AD3-338F-4B8C-BDCA-01A362D57DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceDTO", "ConferenceDTO\ConferenceDTO.csproj", "{3E40872E-75E0-4F5E-9CB0-51316B1169D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{236D44B9-C3FC-4E25-BC05-1047E5054528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{53836AD3-338F-4B8C-BDCA-01A362D57DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53836AD3-338F-4B8C-BDCA-01A362D57DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53836AD3-338F-4B8C-BDCA-01A362D57DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E40872E-75E0-4F5E-9CB0-51316B1169D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E40872E-75E0-4F5E-9CB0-51316B1169D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E40872E-75E0-4F5E-9CB0-51316B1169D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E40872E-75E0-4F5E-9CB0-51316B1169D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236D44B9-C3FC-4E25-BC05-1047E5054528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236D44B9-C3FC-4E25-BC05-1047E5054528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236D44B9-C3FC-4E25-BC05-1047E5054528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236D44B9-C3FC-4E25-BC05-1047E5054528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
